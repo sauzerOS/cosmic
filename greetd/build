@@ -1,0 +1,13 @@
+#!/bin/sh -e
+
+sed -i -e '/feature.doc_cfg/d' greetd_ipc/src/lib.rs
+cargo fetch --locked --target "$(rustc --print host-tuple)"
+cargo build --frozen --release --all-features
+make -C man all
+
+install -Dm0755 -t "$1/usr/bin/" "target/release/greetd"
+install -Dm0644 -t "$1/usr/lib/systemd/system/" "greetd.service"
+install -Dm0644 -t "$1/etc/greetd/" config.toml
+install -Dm0644 "greetd.pam" "$1/etc/pam.d/greetd"
+install -Dm0644 "greetd.sysusers" "$1/usr/lib/sysusers.d/greetd.conf"
+make -C man DESTDIR="$1" PREFIX=/usr install

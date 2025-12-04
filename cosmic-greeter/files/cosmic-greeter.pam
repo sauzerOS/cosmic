@@ -1,0 +1,25 @@
+#%PAM-1.0
+
+# 1. AUTHENTICATION STAGE
+# Block login if /etc/nologin exists
+auth       required    pam_nologin.so
+# Load environment from /etc/environment and ~/.pam_environment
+auth       required    pam_env.so
+# Use /etc/passwd and /etc/shadow for password validation (THE MAIN AUTH)
+auth       required    pam_unix.so
+
+# 2. ACCOUNT STAGE
+# Check if the account is active, not expired, etc.
+account    required    pam_unix.so
+
+# 3. PASSWORD STAGE
+# Allow password to be changed (used during an actual password change)
+password   required    pam_unix.so
+
+# 4. SESSION STAGE
+# Setup the basic session
+session    required    pam_unix.so
+# Apply resource limits
+session    required    pam_limits.so
+# Optional: Integrate with systemd if you want systemd user session management
+ session    optional    pam_systemd.so

@@ -1,0 +1,9 @@
+#!/bin/sh -e
+
+patch -Np1 -i cosmic-session-lto.patch
+cargo fetch --locked
+sed -i 's/libexec/lib/g' Justfile src/main.rs
+RUSTFLAGS+=" -C link-arg=-fuse-ld=lld"
+cargo build --release --frozen
+just rootdir=$1 install
+install -Dm644 data/dconf/profile/cosmic -t "$1/usr/share/dconf/profile/"

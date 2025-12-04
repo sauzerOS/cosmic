@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+cargo fetch --locked
+sed 's/lto = "fat"/lto = "thin"/' -i Cargo.toml
+RUSTFLAGS+=" -C link-arg=-fuse-ld=mold"
+just build-release --frozen
+just rootdir=$1 install

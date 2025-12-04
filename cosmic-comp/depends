@@ -1,0 +1,9 @@
+fontconfig
+libdisplay-info
+seatd
+libinput
+libxcb
+libxkbcommon
+mesa
+pixman
+wayland

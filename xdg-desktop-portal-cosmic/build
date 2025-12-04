@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+cargo fetch --locked
+RUSTFLAGS+=" -C link-arg=-fuse-ld=mold"
+make ARGS+=" --frozen --release"
+make prefix='/usr' libexecdir='/usr/lib' DESTDIR=$1 install

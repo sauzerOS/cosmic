@@ -1,0 +1,7 @@
+#!/bin/sh -e
+
+meson setup build
+meson compile -C build
+meson install -C build --destdir=tmpdir
+mkdir -pv $1/usr/share
+mv build/tmpdir/usr/share/sounds $1/usr/share/

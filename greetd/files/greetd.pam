@@ -1,0 +1,17 @@
+#%PAM-1.0
+
+# 1. AUTHENTICATION STAGE
+# Check if TTY is secure (optional, but good practice for local logins)
+auth       required    pam_securetty.so
+# Deny login if /etc/nologin exists
+auth       requisite   pam_nologin.so
+
+# 2. ACCOUNT STAGE
+# Ensure the account is valid (not expired, user exists, etc.)
+account    required    pam_unix.so
+
+# 3. SESSION STAGE
+# Set up the session environment
+session    required    pam_unix.so
+# Apply resource limits from /etc/security/limits.conf
+session    required    pam_limits.so

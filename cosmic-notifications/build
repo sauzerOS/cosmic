@@ -1,0 +1,5 @@
+#!/bin/sh -e
+
+cargo fetch --locked
+just build-release --frozen
+just rootdir=$1 install

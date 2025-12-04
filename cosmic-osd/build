@@ -1,0 +1,6 @@
+#!/bin/sh -e
+
+cargo fetch --locked
+RUSTFLAGS+=" -C link-arg=-fuse-ld=lld" \
+just polkit-agent-helper-1="/usr/lib/polkit-1/polkit-agent-helper-1" build-release
+just rootdir=$1 install

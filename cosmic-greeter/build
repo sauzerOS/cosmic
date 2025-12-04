@@ -1,0 +1,11 @@
+#!/bin/sh -e
+
+patch -Np1 -i cosmic-greeter-lto.patch
+RUSTFLAGS+=" -C link-arg=-fuse-ld=lld"
+just build-release
+just rootdir="${1}" install
+mkdir -pv $1/usr/lib/systemd/system
+mkdir -pv $1/etc/{greetd,pam.d}
+install -Dm 644 debian/cosmic-greeter{.service,-daemon.service} -t "${1}"/usr/lib/systemd/system/
+install -Dm 644 cosmic-greeter.toml -t "${1}"/etc/greetd/
+install -Dm 644 "greetd.pam" "$1/etc/pam.d/cosmic-greeter"
