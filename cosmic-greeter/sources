@@ -1,2 +1,2 @@
-git+https://github.com/pop-os/cosmic-greeter
+https://github.com/pop-os/cosmic-greeter/archive/refs/tags/epoch-1.0.1.tar.gz
 files/cosmic-greeter-lto.patch

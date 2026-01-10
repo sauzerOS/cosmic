@@ -1,0 +1,2 @@
+https://github.com/pop-os/cosmic-session/archive/refs/tags/epoch-${version}.tar.gz
+files/cosmic-session-lto.patch

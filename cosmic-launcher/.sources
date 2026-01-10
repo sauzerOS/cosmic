@@ -1,0 +1,2 @@
+https://github.com/pop-os/cosmic-launcher/archive/refs/tags/epoch-${version}.tar.gz
+files/cosmic-launcher-lto.patch

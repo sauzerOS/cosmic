@@ -1,0 +1,2 @@
+https://github.com/pop-os/cosmic-settings-daemon/archive/refs/tags/epoch-${version}.tar.gz
+files/cosmic-settings-daemon-lto.patch
