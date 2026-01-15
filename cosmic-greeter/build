@@ -1,11 +1,16 @@
 #!/bin/sh -e
 
 patch -Np1 -i cosmic-greeter-lto.patch
+patch -Np1 -i cosmic-greeter-display-manager.patch
 RUSTFLAGS+=" -C link-arg=-fuse-ld=lld"
-just build-release
+
+git lfs install --local
+git remote add network-origin https://github.com/pop-os/cosmic-greeter
+git lfs fetch network-origin
+git lfs checkout
+
+just build-release --frozen
 just rootdir="${1}" install
-mkdir -pv $1/usr/lib/systemd/system
-mkdir -pv $1/etc/{greetd,pam.d}
-install -Dm 644 debian/cosmic-greeter{.service,-daemon.service} -t "${1}"/usr/lib/systemd/system/
 install -Dm 644 cosmic-greeter.toml -t "${1}"/etc/greetd/
-install -Dm 644 "greetd.pam" "$1/etc/pam.d/cosmic-greeter"
+install -Dm 644 debian/cosmic-greeter{.service,-daemon.service} -t "${1}"/usr/lib/systemd/system/
+

@@ -1,6 +1,7 @@
 cosmic-comp
+git-lfs make
 greetd
+just
 libxkbcommon
 pam
 wayland
-just

@@ -1,2 +1,4 @@
-https://github.com/pop-os/cosmic-greeter/archive/refs/tags/epoch-${version}.tar.gz
+git+https://github.com/pop-os/cosmic-greeter#epoch-${version}
 files/cosmic-greeter-lto.patch
+files/cosmic-greeter.pam
+files/cosmic-greeter-display-manager.patch
