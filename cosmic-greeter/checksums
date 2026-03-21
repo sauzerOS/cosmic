@@ -1,1 +1,3 @@
-
+ec124f165552c8db32d485a56b1768d67fcb21580f630677d26eee2557df19a4  cosmic-greeter-lto.patch
+e1a73356da5a8693a1b85986ee6d3a1bbe17585fe1fdc29f549387b2454a6736  cosmic-greeter.pam
+daf3f34fc753a27315e820e5c83136007ae2278df0726b7f2227c726c9f02a30  cosmic-greeter-display-manager.patch
