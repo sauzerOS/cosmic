@@ -1,10 +1,14 @@
-diff --unified --recursive --text a/Cargo.toml b/Cargo.toml
---- a/Cargo.toml	2024-12-09 15:47:36.952203029 -0700
-+++ b/Cargo.toml	2024-12-09 15:55:12.345871472 -0700
-@@ -57,3 +57,6 @@
- # [patch."https://github.com/pop-os/launcher/"]
- # pop-launcher = { git = "https://github.com/wiiznokes/launcher/", rev = "86a54d54a68b832d404ef83a03af84cf9ef3e694" }
- # pop-launcher-service = { git = "https://github.com/wiiznokes/launcher/", rev = "86a54d54a68b832d404ef83a03af84cf9ef3e694" }
-+
+diff --git a/Cargo.toml b/Cargo.toml
+index 8257f44..b31a08b 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -49,6 +49,9 @@ zbus = { version = "5.13", default-features = false, features = ["tokio"] }
+ unicode-truncate = "2.0.1"
+ unicode-width = "0.2.2"
+
 +[profile.release]
 +lto = "thin"
++
+ # [patch.'https://github.com/pop-os/libcosmic']
+ # libcosmic = { git = "https://github.com/pop-os/libcosmic//" }
+ # cosmic-config = { git = "https://github.com/pop-os/libcosmic//" }
