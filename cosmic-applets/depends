@@ -3,6 +3,6 @@ libinput
 pipewire
 pulseaudio
 libxkbcommon
-rust
-just
-mold
+rust make
+just make
+mold make
