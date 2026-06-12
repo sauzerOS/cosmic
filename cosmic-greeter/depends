@@ -1,7 +1,8 @@
 cosmic-comp
-git-lfs make
+cosmic-icon-theme
 greetd
-just
 libxkbcommon
 pam
 wayland
+just make
+git-lfs make
