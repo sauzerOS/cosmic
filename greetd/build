@@ -1,4 +1,4 @@
-#!/bin/sh -e
+#!/bin/bash -e
 
 sed -i -e '/feature.doc_cfg/d' greetd_ipc/src/lib.rs
 cargo fetch --locked --target "$(rustc --print host-tuple)"
