@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/pop-os/gtk-theme",
+  "category": "extra",
+  "description": "System76 Pop sound theme",
+  "info": "",
+  "license": "GPL-3.0-or-later",
+  "tags": [
+    "cosmic"
+  ]
+}

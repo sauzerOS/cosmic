@@ -1,0 +1,11 @@
+{
+  "url": "https://git.sr.ht/~kennylevinsen/greetd",
+  "category": "extra",
+  "description": "Generic greeter daemon",
+  "info": "",
+  "license": "GPL-3.0-only",
+  "tags": [
+    "cosmic",
+    "server"
+  ]
+}

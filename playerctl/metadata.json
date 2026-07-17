@@ -1,0 +1,11 @@
+{
+  "url": "https://github.com/altdesktop/playerctl",
+  "category": "extra",
+  "description": "mpris media player controller and lib for spotify, vlc, audacious, bmp, xmms2, and others.",
+  "info": "",
+  "license": "LGPL-3.0-only",
+  "tags": [
+    "cosmic",
+    "multimedia"
+  ]
+}

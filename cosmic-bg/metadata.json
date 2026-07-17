@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/pop-os/cosmic-bg",
+  "category": "extra",
+  "description": "COSMIC session service which applies backgrounds to displays",
+  "info": "",
+  "license": "MPL-2.0",
+  "tags": [
+    "cosmic"
+  ]
+}

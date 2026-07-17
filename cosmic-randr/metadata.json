@@ -1,0 +1,13 @@
+{
+  "url": "https://github.com/pop-os/cosmic-randr",
+  "category": "extra",
+  "description": "Library and utility for displaying and configuring Wayland outputs",
+  "info": "",
+  "license": "MPL-2.0",
+  "tags": [
+    "cosmic",
+    "library",
+    "utility",
+    "wayland"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/pop-os/cosmic-applets",
+  "category": "extra",
+  "description": "Applets for COSMIC Panel",
+  "info": "",
+  "license": "GPL-3.0-only",
+  "tags": [
+    "cosmic"
+  ]
+}

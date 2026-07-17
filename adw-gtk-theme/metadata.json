@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/lassekongo83/adw-gtk3",
+  "category": "extra",
+  "description": "Unofficial GTK 3 port of the libadwaita theme",
+  "info": "",
+  "license": "LGPL-2.1-only",
+  "tags": [
+    "cosmic"
+  ]
+}

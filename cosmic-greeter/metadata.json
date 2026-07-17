@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/pop-os/cosmic-greeter",
+  "category": "extra",
+  "description": "COSMIC greeter for greetd",
+  "info": "",
+  "license": "GPL-3.0-only",
+  "tags": [
+    "cosmic"
+  ]
+}

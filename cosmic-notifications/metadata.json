@@ -1,0 +1,12 @@
+{
+  "url": "https://github.com/pop-os/cosmic-notifications",
+  "category": "extra",
+  "description": "Layer Shell notifications daemon which integrates with COSMIC",
+  "info": "",
+  "license": "GPL-3.0-only",
+  "tags": [
+    "cosmic",
+    "server",
+    "shell"
+  ]
+}

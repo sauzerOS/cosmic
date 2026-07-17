@@ -1,0 +1,11 @@
+{
+  "url": "https://github.com/pop-os/cosmic-panel",
+  "category": "extra",
+  "description": "XDG Shell Wrapper Panel for Cosmic",
+  "info": "",
+  "license": "GPL-3.0-only",
+  "tags": [
+    "cosmic",
+    "shell"
+  ]
+}

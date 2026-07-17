@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/casey/just",
+  "category": "extra",
+  "description": "A handy way to save and run project-specific commands",
+  "info": "",
+  "license": "CC0-1.0",
+  "tags": [
+    "cosmic"
+  ]
+}

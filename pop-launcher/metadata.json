@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/pop-os/launcher",
+  "category": "extra",
+  "description": "Modular IPC-based desktop launcher service",
+  "info": "",
+  "license": "MPL-2.0",
+  "tags": [
+    "cosmic"
+  ]
+}

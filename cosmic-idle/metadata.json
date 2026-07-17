@@ -1,0 +1,11 @@
+{
+  "url": "https://github.com/pop-os/cosmic-idle",
+  "category": "extra",
+  "description": "Cosmic idle daemon",
+  "info": "",
+  "license": "GPL-3.0-only",
+  "tags": [
+    "cosmic",
+    "server"
+  ]
+}

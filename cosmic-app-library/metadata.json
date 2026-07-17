@@ -1,0 +1,11 @@
+{
+  "url": "https://github.com/pop-os/cosmic-applibrary",
+  "category": "extra",
+  "description": "Cosmic App Library",
+  "info": "",
+  "license": "GPL-3.0-only",
+  "tags": [
+    "cosmic",
+    "library"
+  ]
+}

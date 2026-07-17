@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/pop-os/cosmic-workspaces-epoch",
+  "category": "extra",
+  "description": "Cosmic workspaces",
+  "info": "",
+  "license": "GPL-3.0-only",
+  "tags": [
+    "cosmic"
+  ]
+}

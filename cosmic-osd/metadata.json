@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/pop-os/cosmic-osd",
+  "category": "extra",
+  "description": "COSMIC On-Screen Display",
+  "info": "",
+  "license": "GPL-3.0-only",
+  "tags": [
+    "cosmic"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/pop-os/cosmic-settings",
+  "category": "extra",
+  "description": "The settings application for the COSMIC desktop environment",
+  "info": "",
+  "license": "GPL-3.0-only",
+  "tags": [
+    "cosmic"
+  ]
+}

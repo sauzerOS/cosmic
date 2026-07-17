@@ -1,0 +1,11 @@
+{
+  "url": "https://github.com/pop-os/cosmic-settings-daemon",
+  "category": "extra",
+  "description": "Cosmic settings daemon",
+  "info": "",
+  "license": "GPL-3.0-only",
+  "tags": [
+    "cosmic",
+    "server"
+  ]
+}

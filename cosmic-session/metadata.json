@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/pop-os/cosmic-session",
+  "category": "extra",
+  "description": "Session manager for the COSMIC desktop environment",
+  "info": "",
+  "license": "GPL-3.0-only",
+  "tags": [
+    "cosmic"
+  ]
+}

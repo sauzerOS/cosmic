@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/pop-os/icon-theme",
+  "category": "extra",
+  "description": "System76 Pop Icon Theme",
+  "info": "",
+  "license": "CCPL",
+  "tags": [
+    "cosmic"
+  ]
+}

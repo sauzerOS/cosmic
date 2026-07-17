@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/pop-os/cosmic-comp",
+  "category": "extra",
+  "description": "Compositor for the COSMIC desktop environment",
+  "info": "",
+  "license": "GPL-3.0-only",
+  "tags": [
+    "cosmic"
+  ]
+}

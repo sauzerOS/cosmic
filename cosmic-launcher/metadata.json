@@ -1,0 +1,11 @@
+{
+  "url": "https://github.com/pop-os/cosmic-launcher",
+  "category": "extra",
+  "description": "Layer Shell frontend for Pop Launcher",
+  "info": "",
+  "license": "GPL-3.0-only",
+  "tags": [
+    "cosmic",
+    "shell"
+  ]
+}

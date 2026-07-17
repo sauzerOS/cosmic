@@ -1,0 +1,10 @@
+{
+  "url": "https://github.com/pop-os/xdg-desktop-portal-cosmic",
+  "category": "extra",
+  "description": "A backend implementation for xdg-desktop-portal for the COSMIC desktop environment",
+  "info": "",
+  "license": "GPL-3.0-only",
+  "tags": [
+    "cosmic"
+  ]
+}

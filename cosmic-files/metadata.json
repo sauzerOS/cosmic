@@ -1,0 +1,11 @@
+{
+  "url": "https://github.com/pop-os/cosmic-files",
+  "category": "extra",
+  "description": "File manager for the COSMIC desktop environment",
+  "info": "",
+  "license": "GPL-3.0-only",
+  "tags": [
+    "cosmic",
+    "file-manager"
+  ]
+}

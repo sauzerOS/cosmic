@@ -1,0 +1,11 @@
+{
+  "url": "https://github.com/pop-os/cosmic-screenshot",
+  "category": "extra",
+  "description": "Utility for capturing screenshots via XDG Desktop Portal",
+  "info": "",
+  "license": "GPL-3.0-only",
+  "tags": [
+    "cosmic",
+    "utility"
+  ]
+}
