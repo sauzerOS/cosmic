@@ -3,3 +3,4 @@ libxkbcommon
 pop-icon-theme
 xdg-utils
 just
+rust make
