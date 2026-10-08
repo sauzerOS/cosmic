@@ -1,4 +1,4 @@
-git+https://github.com/pop-os/cosmic-greeter#epoch-1.9.1
+git+https://github.com/pop-os/cosmic-greeter#epoch-1.10.0
 files/cosmic-greeter-lto.patch
 files/cosmic-greeter-display-manager.patch
 files/background.jpg res
