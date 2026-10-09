@@ -2,5 +2,5 @@ dbus
 libxkbcommon
 pop-icon-theme
 xdg-utils
-just
+just make
 rust make

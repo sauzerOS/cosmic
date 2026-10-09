@@ -1,5 +1,6 @@
 cosmic-icon-theme
-just
 gvfs
 libxkbcommon
 xdg-utils
+just make
+rust make

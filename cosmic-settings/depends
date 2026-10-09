@@ -10,5 +10,5 @@ pulseaudio
 libxkbcommon
 networkmanager
 wayland
-just
-mold
+just make
+rust make

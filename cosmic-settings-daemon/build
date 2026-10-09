@@ -1,10 +1,11 @@
 #!/bin/bash -e
 
 patch -Np1 -i cosmic-settings-daemon-lto.patch
+# The libspa crate's C helpers need fat LTO objects to be found at link time
+# (see xdg-desktop-portal-cosmic).
+export CFLAGS+=' -ffat-lto-objects'
 cargo fetch --locked
-sed 's/libexec/lib/g' -i Makefile src/main.rs
-sed 's/sudo/wheel/g' -i data/polkit-1/rules.d/cosmic-settings-daemon.rules
-export GEOCLUE_AGENT="/usr/lib/geoclue-2.0/demos/agent"
-RUSTFLAGS+=" -C link-arg=-fuse-ld=lld"
-make ARGS+=" --frozen --release" geoclue_agent='/usr/lib/geoclue-2.0/demos/agent'
-make DESTDIR=$1 install
+# 1.10.0 replaced the Makefile with a justfile; the libexec paths and the
+# geoclue agent setting are gone, and the polkit rule already allows wheel.
+just build-release --frozen
+just rootdir=$1 install

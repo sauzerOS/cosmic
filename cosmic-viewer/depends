@@ -1,0 +1,13 @@
+dav1d
+libgcc
+glibc
+hicolor-icon-theme
+libde265
+libjpeg-turbo
+libstdc++
+libxkbcommon
+clang make
+cmake make
+git make
+just make
+rust make

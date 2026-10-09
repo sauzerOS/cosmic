@@ -3,3 +3,5 @@ libinput
 libxkbcommon
 mesa
 wayland
+just make
+rust make

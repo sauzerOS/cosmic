@@ -1,0 +1,6 @@
+#!/bin/bash -e
+
+export RUSTUP_TOOLCHAIN=stable
+cargo fetch --locked --target "$(rustc -vV | sed -n 's/host: //p')"
+just build-release --frozen
+just rootdir="${1}" install

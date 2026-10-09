@@ -7,3 +7,5 @@ pop-sound-theme
 wireplumber
 xdg-utils
 libxkbcommon
+just make
+rust make

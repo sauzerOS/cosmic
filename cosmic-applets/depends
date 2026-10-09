@@ -5,4 +5,3 @@ pulseaudio
 libxkbcommon
 rust make
 just make
-mold make

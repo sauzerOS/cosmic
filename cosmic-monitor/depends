@@ -1,0 +1,4 @@
+libxkbcommon
+git make
+just make
+rust make

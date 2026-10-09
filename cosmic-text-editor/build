@@ -1,0 +1,13 @@
+#!/bin/bash -e
+
+patch -Np1 -i cosmic-text-editor-lto.patch
+cargo fetch --locked
+
+git lfs install --local
+git remote add network-origin https://github.com/pop-os/cosmic-edit
+git lfs fetch network-origin
+git lfs checkout
+
+export RUSTONIG_DYNAMIC_LIBONIG=1
+just build-release --frozen
+just rootdir="${1}" install

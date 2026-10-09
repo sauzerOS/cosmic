@@ -1,5 +1,4 @@
 fontconfig
-libdisplay-info
 seatd
 libinput
 libxcb
@@ -7,3 +6,7 @@ libxkbcommon
 mesa
 pixman
 wayland
+just make
+rust make
+hwdata make
+meson make

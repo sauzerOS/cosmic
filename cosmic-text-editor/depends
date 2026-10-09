@@ -1,0 +1,11 @@
+cosmic-icon-theme
+glib
+libgcc
+glibc
+libxkbcommon
+wayland
+oniguruma
+git make
+git-lfs make
+just make
+rust make

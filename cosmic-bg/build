@@ -1,7 +1,6 @@
 #!/bin/bash -e
 
-patch -Np1 -i cosmic-bg-lto.patch
+#patch -Np1 -i cosmic-bg-lto.patch
 cargo fetch --locked
-RUSTFLAGS+=" -C link-arg=-fuse-ld=lld"
 just build-release --frozen
 just rootdir=$1 install

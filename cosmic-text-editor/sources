@@ -1,0 +1,2 @@
+git+https://github.com/pop-os/cosmic-edit#tag=epoch-1.10.0
+files/cosmic-text-editor-lto.patch

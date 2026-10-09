@@ -1,7 +1,22 @@
 #!/bin/bash -e
 
+# The libdisplay-info crate cosmic-comp locks, 0.3.0 (the newest), needs
+# libdisplay-info < 0.4, and the system has 0.4.0 (soname .so.4, a different
+# ABI). Build 0.3.0 as a static library into the build tree and link it in;
+# 0.3 and 0.4 install the same paths, so they cannot be installed together.
+ldi="$PWD/libdisplay-info-0.3"
+meson setup libdisplay-info/build libdisplay-info \
+    --prefix "$ldi" \
+    --libdir lib \
+    --buildtype plain \
+    --wrap-mode nodownload \
+    -D default_library=static \
+    -D b_pie=true \
+    -D b_ndebug=true
+meson compile -C libdisplay-info/build
+meson install -C libdisplay-info/build
+export PKG_CONFIG_PATH="$ldi/lib/pkgconfig${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}"
+
 cargo fetch --locked
-sed 's/lto = "fat"/lto = "thin"/' -i Cargo.toml
-RUSTFLAGS+=" -C link-arg=-fuse-ld=lld"
-make ARGS+=" --frozen --release"
-make prefix='/usr' libexecdir='/usr/lib' DESTDIR=$1 install
+just build-release --frozen
+just rootdir=$1 install

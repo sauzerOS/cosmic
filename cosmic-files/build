@@ -1,7 +1,6 @@
 #!/bin/bash -e
 
-patch -Np1 -i cosmic-files-lto.patch
+#patch -Np1 -i cosmic-files-lto.patch
 cargo fetch --locked
-RUSTFLAGS+=" -C link-arg=-fuse-ld=lld"
 CC=clang just build-release --frozen
 just rootdir=$1 install

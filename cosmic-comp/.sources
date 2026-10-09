@@ -1,1 +1,2 @@
 https://github.com/pop-os/cosmic-comp/archive/refs/tags/epoch-${version}.tar.gz
+https://gitlab.freedesktop.org/emersion/libdisplay-info/-/releases/0.3.0/downloads/libdisplay-info-0.3.0.tar.xz libdisplay-info

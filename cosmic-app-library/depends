@@ -1,4 +1,4 @@
 cosmic-icon-theme
 libxkbcommon
-just
-rust
+just make
+rust make

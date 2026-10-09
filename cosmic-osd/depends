@@ -4,4 +4,5 @@ pulseaudio
 libxkbcommon
 sound-theme-freedesktop
 wayland
-just
+just make
+rust make

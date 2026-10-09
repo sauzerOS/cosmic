@@ -1,0 +1,7 @@
+#!/bin/bash -e
+
+git lfs install --local
+git remote add network-origin https://github.com/pop-os/cosmic-wallpapers
+git lfs fetch network-origin
+git lfs checkout
+make DESTDIR="${1}" install

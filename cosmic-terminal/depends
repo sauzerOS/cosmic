@@ -1,0 +1,8 @@
+libgcc
+glibc
+libxkbcommon
+wayland
+cosmic-icon-theme
+git make
+just make
+rust make

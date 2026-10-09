@@ -1,6 +1,12 @@
 #!/bin/bash -e
 
+# The libspa crate compiles C helpers (spa_pod_is_object_libspa_rs, ...) with
+# CFLAGS; with -flto they hold only LTO bytecode, and rustc's repacked archive
+# has no LTO symbol index, so the link cannot find them. Fat objects carry
+# machine code too.
+export CFLAGS+=' -ffat-lto-objects'
 cargo fetch --locked
-RUSTFLAGS+=" -C link-arg=-fuse-ld=mold"
-make ARGS+=" --frozen --release"
-make prefix='/usr' libexecdir='/usr/lib' DESTDIR=$1 install
+# The justfile has no build-release recipe since 1.9.0, and its build recipe
+# cannot pass --frozen; it builds this binary in release mode.
+cargo build --release --frozen --bin xdg-desktop-portal-cosmic
+just rootdir=$1 install

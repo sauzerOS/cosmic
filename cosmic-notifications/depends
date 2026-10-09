@@ -1,4 +1,5 @@
 cosmic-icon-theme
 libxkbcommon
 wayland
-just
+just make
+rust make

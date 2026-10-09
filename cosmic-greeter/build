@@ -8,7 +8,6 @@ git lfs fetch network-origin
 git lfs checkout
 
 patch -Np1 -i cosmic-greeter-display-manager.patch
-RUSTFLAGS+=" -C link-arg=-fuse-ld=mold"
 
 just build-release --frozen
 just rootdir="${1}" install

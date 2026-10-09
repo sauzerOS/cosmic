@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-meson setup build
+hokuto-meson build
 meson compile -C build
 meson install -C build --destdir=tmpdir
 mkdir -pv $1/usr/share

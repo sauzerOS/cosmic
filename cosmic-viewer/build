@@ -1,0 +1,11 @@
+#!/bin/bash -e
+
+cargo fetch --locked --target "$(rustc --print host-tuple)"
+# embedded libheif is a static C++ lib; lld can't read GCC LTO bitcode
+CFLAGS+=" -ffat-lto-objects"
+CXXFLAGS+=" -ffat-lto-objects"
+# link against system libjpeg-turbo instead of building the bundled copy
+export TURBOJPEG_SOURCE=pkg-config
+export TURBOJPEG_DYNAMIC=1
+just build-release --frozen
+just rootdir="${1}" install

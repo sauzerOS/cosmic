@@ -1,4 +1,5 @@
 cosmic-icon-theme
 libxkbcommon
-just
-nasm
+just make
+nasm make
+rust make

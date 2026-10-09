@@ -6,3 +6,4 @@ pam
 wayland
 just make
 git-lfs make
+rust make

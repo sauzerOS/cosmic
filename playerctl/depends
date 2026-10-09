@@ -1,3 +1,5 @@
 glib
 gobject-introspection
-meson
+docbook-xsl make
+gtk-doc make
+meson make

@@ -4,4 +4,5 @@ libxkbcommon
 mesa
 wayland
 xdg-desktop-portal
-mold
+just make
+rust make

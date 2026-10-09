@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-patch -Np1 -i cosmic-workspaces-lto.patch
+#patch -Np1 -i cosmic-workspaces-lto.patch
 cargo fetch --locked
 RUSTFLAGS+=' -C link-arg=-fuse-ld=lld'
 make ARGS+=' --frozen --release'
