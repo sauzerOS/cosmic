@@ -12,4 +12,7 @@ patch -Np1 -i cosmic-greeter-display-manager.patch
 just build-release --frozen
 just rootdir="${1}" install
 install -Dm 644 cosmic-greeter.toml -t "${1}"/etc/greetd/
+# greetd's service for cosmic-greeter.toml; dropped from the build in January,
+# so a fresh install failed with "PAM 'cosmic-greeter' service missing".
+install -Dm 644 cosmic-greeter.pam "${1}"/etc/pam.d/cosmic-greeter
 install -Dm 644 debian/cosmic-greeter{.service,-daemon.service} -t "${1}"/usr/lib/systemd/system/
