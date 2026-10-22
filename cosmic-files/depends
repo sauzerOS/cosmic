@@ -4,3 +4,4 @@ libxkbcommon
 xdg-utils
 just make
 rust make
+zstd make

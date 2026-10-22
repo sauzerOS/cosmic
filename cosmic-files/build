@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-#patch -Np1 -i cosmic-files-lto.patch
+export ZSTD_SYS_USE_PKG_CONFIG=1
 cargo fetch --locked
 CC=clang just build-release --frozen
 just rootdir=$1 install

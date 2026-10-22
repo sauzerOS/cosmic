@@ -1,2 +1,1 @@
 https://github.com/pop-os/cosmic-files/archive/refs/tags/epoch-${version}.tar.gz
-files/cosmic-files-lto.patch
