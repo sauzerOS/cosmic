@@ -1,2 +1,2 @@
-git+https://github.com/pop-os/cosmic-term.git#tag=epoch-1.10.0
+git+https://github.com/pop-os/cosmic-term.git#tag=epoch-1.11.0
 files/cosmic-terminal-lto.patch
