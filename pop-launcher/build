@@ -1,6 +1,5 @@
 #!/bin/bash -e
 
 cargo fetch --locked
-sed 's/lto = "fat"/lto = "thin"/g' -i Cargo.toml
-CC=clang just build-release --frozen
+just build-release --frozen
 just rootdir=$1 install
