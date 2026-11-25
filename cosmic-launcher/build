@@ -1,6 +1,5 @@
 #!/bin/bash -e
 
-patch -Np1 -i cosmic-launcher-lto.patch
 cargo fetch --locked
 just build-release --frozen
 just rootdir=$1 install
